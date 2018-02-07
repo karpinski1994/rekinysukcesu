@@ -24,7 +24,7 @@
         }
 
 /* paddingi i marginy zrobiłem na sztywno bo w kazdej ,,sekcji" wydaja mi sie podobne i nie bylo sensu robic tego by utilities - moge sie mylic*/
-        .container-fluid, .container {
+        /* .container-fluid, .container {
             padding-top: 30px;
             padding-bottom: 30px;
             margin-top: 30px;
@@ -39,12 +39,12 @@
         .container--footer {
           padding-bottom: 30px;
           margin-bottom: 0;
-        }
+        } */
         
-        .container-fluid--newsletter {
+        /* .container-fluid--newsletter {
             padding-top: 0;
             padding-bottom: 0;
-        }
+        } */
 
         .carousel-caption {
           top: 50%;
@@ -52,9 +52,9 @@
           bottom: initial;
         }
 
-        .footer__nav > li:first-of-type >a{
+        /* .footer__nav > li:first-of-type >a{
           padding-left: 0;
-        }
+        } */
 
 
         
@@ -67,7 +67,7 @@
               margin: 10px auto;
             }
 
-            .container--newsletter {
+            /* .container--newsletter {
               display: flex;
               flex-direction: column;
               padding-bottom: 200px;
@@ -81,7 +81,7 @@
             .form-control{
               display: block;
               margin-bottom: 20px;
-            }
+            } */
         }
     
     </style>
@@ -307,20 +307,20 @@
       <!-- /END OF TESTIMONIALS -->
       
       <!-- NEWSLETTER -->
-    <section class="container-fluid container-fluid--newsletter bg-primary text-white">
-                <div class="row container container--newsletter mx-auto">
-                    <div class="col">
+    <section class="container-fluid bg-primary text-white pb-4 pt-4 mt-5 mb-5">
+                <div class="row container mx-auto">
+                    <div class="col-md-6">
                         <h3>Newsletter</h3>
                     </div>
-                    <form class="col d-flex justify-content-end">
+                    <form class="col-md-6 d-flex justify-content-end">
                             <div class="form-row">
-                              <div class="col-md-5">
+                              <div class="col-lg-5 mb-3">
                                 <input type="text" class="form-control" placeholder="Your name">
                               </div>
-                              <div class="col-md-5">
+                              <div class="col-lg-5 mb-3">
                                 <input type="text" class="form-control" placeholder="Your email">
                               </div>
-                              <div class="col-md-2">
+                              <div class="col-lg-2">
                                     <input type="submit" class="btn btn-outline-white" value="Submit">
                               </div>
                             </div>
@@ -330,11 +330,11 @@
     <!-- /END THE NEWSLETTER -->
   </main>
       <!-- FOOTER -->
-      <footer class="container container--footer">
+      <footer class="container pb-5">
 <!-- zastanawialem sie czy tego nava zrobić po prostu a a a kolo siebie  albo w divie oszczedzajac troche linijek kodu czy klasycznie ul li -->
-          <ul class="nav nav-pills footer__nav">
+          <ul class="nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link" href="#"><b>Strona główna</b></a>
+                <a class="nav-link pl-0" href="#"><b>Strona główna</b></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">O nas</a>
