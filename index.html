@@ -11,40 +11,11 @@
     <title>Hello, Bootstrap 4!</title>
 
     <style>
-/* nie wiedzialem czy style wywalic do osobnych plikow */
-        .card {
-                margin: 0 auto; /* Added */
-                float: none; /* Added */
-                margin-bottom: 10px; /* Added */
-        }
         .btn-outline-white {
             border: 1px solid #fff;
             color: #fff;
             background-color: transparent;
         }
-
-/* paddingi i marginy zrobiłem na sztywno bo w kazdej ,,sekcji" wydaja mi sie podobne i nie bylo sensu robic tego by utilities - moge sie mylic*/
-        /* .container-fluid, .container {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .container--navigation {
-          padding-top: 0;
-          padding-bottom: 0;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-        }
-        .container--footer {
-          padding-bottom: 30px;
-          margin-bottom: 0;
-        } */
-        
-        /* .container-fluid--newsletter {
-            padding-top: 0;
-            padding-bottom: 0;
-        } */
 
         .carousel-caption {
           top: 50%;
@@ -52,37 +23,7 @@
           bottom: initial;
         }
 
-        /* .footer__nav > li:first-of-type >a{
-          padding-left: 0;
-        } */
 
-
-        
-          @media only screen and (max-width: 768px) {
-            .testimonial__item {
-              flex-direction: column;
-              margin: 10px;
-            }
-            .testimonial__item > div > img {
-              margin: 10px auto;
-            }
-
-            /* .container--newsletter {
-              display: flex;
-              flex-direction: column;
-              padding-bottom: 200px;
-            }
-
-            .container--newsletter > div {
-              display: block;
-              margin-bottom: 50px;
-            }
-
-            .form-control{
-              display: block;
-              margin-bottom: 20px;
-            } */
-        }
     
     </style>
   </head>
@@ -214,7 +155,7 @@
             <h2 class="text-center">The most important</h2>
       <div class="row text-center mt-5">
           <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card mb-5 mx-auto" style="width: 18rem;">
                 <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="display-6">12.01.2017</p>
@@ -225,7 +166,7 @@
             </div>
          </div>
          <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-5 mx-auto" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="display-6">12.01.2017</p>
@@ -236,7 +177,7 @@
                 </div>
         </div>
         <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-5 mx-auto" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="display-6">12.01.2017</p>
@@ -248,7 +189,7 @@
           </div>
         </div>
       <div class="text-center">
-        <a href="#" class="btn btn-outline-info btn-lg mt-5">Read all</a>
+        <a href="#" class="btn btn-outline-info btn-lg mt-3">Read all</a>
       </div> 
     </section>
     <!-- /END THE MOST IMPORTANT -->
@@ -277,28 +218,32 @@
     <section class="container mt-5">
       <h2 class="text-center">We are really famous</h2>
       <div class="row text-center mt-4">
-            <div class="col-lg-6 d-flex testimonial__item mt-4">
-                <div class="col-md-3">
-                <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
+            <div class="col-lg-6 mb-2 mt-4">
+              <div class="row">
+                <div class="col-md-3 mr-4">
+                <img class="rounded-circle d-block mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
                 </div>
-                <div class="col-md-9">
-                    <blockquote class="blockquote mt-3">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <div class="col-md-8">
+                    <blockquote class="blockquote mt-3 d-block">
+                        <p class="mb-0 text-left ml-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer class="blockquote-footer">John Eggy in<cite title="Source Title"> New York Times</cite></footer>
                       </blockquote>
                 </div>
+              </div>
             </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6 d-flex testimonial__item mt-4">
-                    <div class="col-md-3">
-                    <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
+            <div class="col-lg-6 mb-2 mt-4">
+              <div class="row">
+                    <div class="col-md-3 mr-4 col-sm-12">
+                    <img class="rounded-circle d-block mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-md-8 col-sm-12">
                       <blockquote class="blockquote mt-3">
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <p class="mb-0 text-left ml-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                           <footer class="blockquote-footer">Miles Takey in<cite title="Source Title"> Love Magazine</cite></footer>
-                        </blockquote>
+                      </blockquote>
                   </div>
                 </div><!-- /.col-lg-6 -->
+            </div>
        </div><!-- /.row -->
        <div class="text-center">
             <a href="#" class="btn btn-outline-info btn-lg mt-5">Read all</a>
