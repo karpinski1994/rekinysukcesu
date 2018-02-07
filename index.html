@@ -52,6 +52,18 @@
         .footer__nav > li:first-of-type >a{
           padding-left: 0;
         }
+
+
+        
+          @media only screen and (max-width: 768px) {
+            .testimonial__item {
+              flex-direction: column;
+              margin: 20px;
+            }
+            .testimonial__item > div > img {
+              margin: 10px auto;
+            }
+        }
     
     </style>
   </head>
@@ -275,34 +287,34 @@
     </section>
       <!-- /END THE FEATURETTES -->
 
-      <!-- MEDIA -->
+      <!-- TESTIMONIALS -->
       <section class="container">
 
       <h2 class="text-center">We are really famous</h2>
       <div class="row text-center">
-            <div class="col-lg-6 d-flex">
-                <div class="col-lg-3">
+            <div class="col-lg-6 d-flex testimonial__item">
+                <div class="col-md-3">
                 <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
-            </div>
-            <div class="col">
-                <blockquote class="blockquote">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">John Eggy in<cite title="Source Title"> New York Times</cite></footer>
-                  </blockquote>
-            </div>
+                </div>
+                <div class="col-md-9">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">John Eggy in<cite title="Source Title"> New York Times</cite></footer>
+                      </blockquote>
+                </div>
             </div><!-- /.col-lg-6 -->
 
 
-            <div class="col-lg-6 d-flex">
-                    <div class="col-lg-3">
+            <div class="col-lg-6 d-flex testimonial__item">
+                    <div class="col-md-3">
                     <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
-                </div>
-                <div class="col">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">Miles Takey in<cite title="Source Title"> Love Magazine</cite></footer>
-                      </blockquote>
-                </div>
+                  </div>
+                  <div class="col-md-9">
+                      <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <footer class="blockquote-footer">Miles Takey in<cite title="Source Title"> Love Magazine</cite></footer>
+                        </blockquote>
+                  </div>
                 </div><!-- /.col-lg-6 -->
        </div><!-- /.row -->
        <div class="text-center">
@@ -310,7 +322,7 @@
         </div> 
 
     </section>
-      <!-- /END OF MEDIA -->
+      <!-- /END OF TESTIMONIALS -->
 
       <!-- NEWSLETTER -->
       <section class="container-fluid container-fluid--newsletter bg-primary text-white">
