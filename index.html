@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hello, Bootstrap 4!</title>
 
     <style>
-
+/* nie wiedzialem czy style wywalic do osobnych plikow */
         .card {
                 margin: 0 auto; /* Added */
                 float: none; /* Added */
@@ -87,47 +87,45 @@
     </style>
   </head>
   <body>
-<!-- NAVIGATION -->
-
-<nav class="container container--navigation navbar navbar-expand-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- z regoly logo/ takie cos przenosi do strony glownej wiec tez zrobilem na anchorze -->
-    <a class="text-info" href="#"><strong>RekinySukcesu.pl</strong></a>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Strona główna<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <!-- sprawdz atrybut role="button" -->
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">O nas</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Zespół</a>
-              <a class="dropdown-item" href="#">Realizacje</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Rekiny na Facebooku!</a>
-            </div>
+    <!-- NAVIGATION -->
+    <nav class="container container--navigation navbar navbar-expand-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- z reguly logo/ takie cos przenosi do strony glownej wiec tez zrobilem na anchorze -->
+      <a class="text-info" href="#"><strong>RekinySukcesu.pl</strong></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Strona główna<span class="sr-only">(current)</span></a>
           </li>
-        <li class="hidden-lg-down d-md-none d-lg-block">
-          <a class="nav-link" href="#">Aktualności</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Kontakt</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+          <li class="nav-item dropdown">
+            <!-- sprawdz atrybut role="button" -->
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">O nas</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Zespół</a>
+                <a class="dropdown-item" href="#">Realizacje</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Rekiny na Facebooku!</a>
+              </div>
+            </li>
+          <li class="hidden-lg-down d-md-none d-lg-block">
+            <a class="nav-link" href="#">Aktualności</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- /END NAVIGATION -->
 
-
-<!-- /END NAVIGATION -->
-
+  <main>
+    <!-- HEADER CAROUSEL -->
     <header id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -139,9 +137,7 @@
           <div class="">
                 <div class="carousel-caption">
                   <h1>Lorem ipsum</h1>
-
                   <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla.</b></p>
-                  
                   <p> Duis at purus blandit diam laoreet vestibulum.Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.Cras mollis dapibusfringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit ametarcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
                   <p><a class="btn btn-lg btn-light" href="#">Read more</a></p>
                 </div>
@@ -153,7 +149,6 @@
             <div class="carousel-caption">
               <h1>Dolor sit amet</h1>
               <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla.</b></p>
-                  
               <p> Duis at purus blandit diam laoreet vestibulum.Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.Cras mollis dapibusfringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit ametarcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
               <p><a class="btn btn-lg btn-light" href="#">Read more</a></p>
             </div>
@@ -169,17 +164,12 @@
         <span class="sr-only">Next</span>
       </a>
     </header>
+    <!-- HEADER CAROUSEL END -->
 
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <!--  -->
+    <!--  SECTION CIRCLES -->
     <section class="container">
-    <h2 class="text-center">Hello Bootstrap 4!</h2>
-    
-
+      <h2 class="text-center">Hello Bootstrap 4!</h2>
       <!-- Three columns of text below the carousel -->
       <div class="row text-center mt-5">
         <div class="col-lg-4">
@@ -202,42 +192,25 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </section>
-<!-- /END OF CIRCLES -->
-      <!-- START THE FEATURETTES -->
-        <section class="container-fluid bg-light">
-
-
+    <!-- /END OF CIRCLES -->
+    <!--FEATURETTES -->
+    <section class="container-fluid bg-light">
       <h2 class="text-center">Red is the fastest</h2>
-
-
-
       <div class="row featurette container mx-auto">
         <div class="col-md-7">
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.<span class="text-danger"><b> Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.</b></span> Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor.</p>
-
           <p class="lead">Curabitur a felis interdum, dictum est in, ornare urna. Proin vitae condimentum odio.<b> Etiam aliquam finibus commodo. Nam a vestibulum erat.</b></p>
-
           <button type="button" class="btn btn-outline-info btn-lg mb-4">Something</button>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-fluid mx-auto" src="https://images.pexels.com/photos/145970/pexels-photo-145970.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
         </div>
       </div>
-
-
-
     </section>
-
-      <!-- /END THE FEATURETTES -->
-
-
-      
-      <!-- THE MOST IMPORTANT SECTION -->
-
-      <section class="container">
+    <!-- /END THE FEATURETTES --> 
+    <!-- THE MOST IMPORTANT SECTION -->
+    <section class="container">
             <h2 class="text-center">The most important</h2>
-
-
       <div class="row text-center mt-5">
           <div class="col-lg-4">
             <div class="card" style="width: 18rem;">
@@ -250,7 +223,6 @@
                 </div>
             </div>
          </div>
-
          <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
@@ -262,7 +234,6 @@
                     </div>
                 </div>
         </div>
-
         <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
@@ -273,44 +244,34 @@
                         <a href="#" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
+          </div>
         </div>
-      </div>
-    <div class="text-center">
-      <a href="#" class="btn btn-outline-info btn-lg mt-5">Read all</a>
-    </div> 
-
-</section>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-info btn-lg mt-5">Read all</a>
+      </div> 
+    </section>
     <!-- /END THE MOST IMPORTANT -->
-
-
-      <!-- START THE FEATURETTES -->
-      <section class="container-fluid bg-light">
-
+    <!-- START THE FEATURETTES -->
+    <section class="container-fluid bg-light">
       <h2 class="text-center">Red is the sexiest</h2>
-
       <div class="row featurette container mx-auto">
         <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto" src="https://images.pexels.com/photos/146080/pexels-photo-146080.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
           <p class="lead">Curabitur a felis interdum, dictum est in, ornare urna. Proin vitae condimentum odio. Etiam aliquam finibus commodo. <b>Nam a vestibulum erat.</b></p>
-
           <ul>
               <li>Lorem ipsum dolor sit amet,</li>
               <li>In in tincidunt nulla,</li>
               <li>Duis at purus blandit diam laoreet vestibulum.</li>
           </ul>
-
           <a href="#" class="btn btn-outline-info btn-lg">Read more</a>
         </div>
       </div>
-
     </section>
       <!-- /END THE FEATURETTES -->
-
       <!-- TESTIMONIALS -->
-      <section class="container">
-
+    <section class="container">
       <h2 class="text-center">We are really famous</h2>
       <div class="row text-center mt-4">
             <div class="col-lg-6 d-flex testimonial__item mt-4">
@@ -324,8 +285,6 @@
                       </blockquote>
                 </div>
             </div><!-- /.col-lg-6 -->
-
-
             <div class="col-lg-6 d-flex testimonial__item mt-4">
                     <div class="col-md-3">
                     <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
@@ -341,14 +300,10 @@
        <div class="text-center">
             <a href="#" class="btn btn-outline-info btn-lg mt-5">Read all</a>
         </div> 
-
     </section>
       <!-- /END OF TESTIMONIALS -->
-
       <!-- NEWSLETTER -->
-      <section class="container-fluid container-fluid--newsletter bg-primary text-white">
-
-
+    <section class="container-fluid container-fluid--newsletter bg-primary text-white">
                 <div class="row container container--newsletter mx-auto">
                     <div class="col">
                         <h3>Newsletter</h3>
@@ -366,13 +321,10 @@
                               </div>
                             </div>
                     </form>
-                    
                 </div>
-            
-        </section>
+    </section>
     <!-- /END THE NEWSLETTER -->
-
-
+  </main>
       <!-- FOOTER -->
       <footer class="container container--footer">
 <!-- zastanawialem sie czy tego nava zrobić po prostu a a a kolo siebie  albo w divie oszczedzajac troche linijek kodu czy klasycznie ul li -->
@@ -396,22 +348,13 @@
                 <a class="nav-link" href="#">Kontakt</a>
               </li>
           </ul>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum. Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero. Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit amet arcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
-
-
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; Copyright 2017 - Paweł Ciepliński</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum. Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero. Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit amet arcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>&copy; Copyright 2017 - Paweł Ciepliński</p>
       </footer>
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!--  -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
