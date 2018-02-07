@@ -30,6 +30,16 @@
             margin-top: 30px;
             margin-bottom: 30px;
         }
+        .container--navigation {
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .container--footer {
+          padding-bottom: 30px;
+          margin-bottom: 0;
+        }
         .container-fluid--newsletter {
             padding-top: 0;
             padding-bottom: 0;
@@ -38,16 +48,54 @@
         .carousel-caption {
             transform: translateY(-55%);
         }
+
+        .footer__nav > li:first-of-type >a{
+          padding-left: 0;
+        }
     
     </style>
   </head>
   <body>
+<!-- NAVIGATION -->
 
-    <!-- <nav class="">
-     
-    </nav> -->
+<nav class="container container--navigation navbar navbar-expand-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="text-info" href="#"><strong>RekinySukcesu.pl</strong></a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">O nas</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Zespół</a>
+              <a class="dropdown-item" href="#">Realizacje</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Rekiny na Facebooku!</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aktualności</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- /END NAVIGATION -->
+
+    <header id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -57,9 +105,12 @@
           <img class="first-slide" src="img/silde1.jpg" alt="First slide">
           <div class="">
                 <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-light" href="#" role="button">Learn more</a></p>
+                  <h1>Lorem ipsum</h1>
+
+                  <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla.</b></p>
+                  
+                  <p> Duis at purus blandit diam laoreet vestibulum.Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.Cras mollis dapibusfringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit ametarcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
+                  <p><a class="btn btn-lg btn-light" href="#" role="button">Read more</a></p>
                 </div>
             </div>
         </div>
@@ -67,9 +118,11 @@
           <img class="second-slide" src="img/silde2.jpg" alt="Second slide">
           <div class="">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-light" href="#" role="button">Learn more</a></p>
+              <h1>Dolor sit amet</h1>
+              <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla.</b></p>
+                  
+              <p> Duis at purus blandit diam laoreet vestibulum.Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.Cras mollis dapibusfringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit ametarcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
+              <p><a class="btn btn-lg btn-light" href="#" role="button">Read more</a></p>
             </div>
           </div>
         </div>
@@ -82,7 +135,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </header>
 
 
     <!-- Marketing messaging and featurettes
@@ -91,28 +144,28 @@
 
     <!--  -->
     <section class="container">
-    <h1 class="text-center">Hello Bootstrap 4!</h1>
+    <h2 class="text-center">Hello Bootstrap 4!</h2>
     
 
       <!-- Three columns of text below the carousel -->
       <div class="row text-center">
         <div class="col-lg-4">
           <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Read more</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Read more</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Read more</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </section>
@@ -127,9 +180,9 @@
 
       <div class="row featurette container mx-auto">
         <div class="col-md-7">
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.<span class="text-danger"><b> Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero.</b></span> Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor.</p>
 
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Curabitur a felis interdum, dictum est in, ornare urna. Proin vitae condimentum odio.<b> Etiam aliquam finibus commodo. Nam a vestibulum erat.</b></p>
 
           <button type="button" class="btn btn-outline-info btn-lg">Something</button>
         </div>
@@ -157,10 +210,10 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <p class="display-6">12.08.2017</p>
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="display-6">12.01.2017</p>
+                    <h5 class="card-title">Lorem ipsum dolor</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
                 </div>
             </div>
          </div>
@@ -169,10 +222,10 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <p class="display-6">12.08.2017</p>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="display-6">12.01.2017</p>
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
         </div>
@@ -181,10 +234,10 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <p class="display-6">12.08.2017</p>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="display-6">12.01.2017</p>
+                        <h5 class="card-title">Lorem ipsum dolor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
         </div>
@@ -207,9 +260,13 @@
                     <img class="featurette-image img-fluid mx-auto" src="https://images.pexels.com/photos/146080/pexels-photo-146080.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Curabitur a felis interdum, dictum est in, ornare urna. Proin vitae condimentum odio. Etiam aliquam finibus commodo. <b>Nam a vestibulum erat.</b></p>
 
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <ul>
+              <li>Lorem ipsum dolor sit amet,</li>
+              <li>In in tincidunt nulla,</li>
+              <li>Duis at purus blandit diam laoreet vestibulum.</li>
+          </ul>
 
           <button type="button" class="btn btn-outline-info btn-lg">Something</button>
         </div>
@@ -228,7 +285,10 @@
                 <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
             </div>
             <div class="col">
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">John Eggy in<cite title="Source Title"> New York Times</cite></footer>
+                  </blockquote>
             </div>
             </div><!-- /.col-lg-6 -->
 
@@ -238,7 +298,10 @@
                     <img class="rounded-circle d-block" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140px" width="140px">
                 </div>
                 <div class="col">
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Miles Takey in<cite title="Source Title"> Love Magazine</cite></footer>
+                      </blockquote>
                 </div>
                 </div><!-- /.col-lg-6 -->
        </div><!-- /.row -->
@@ -260,10 +323,10 @@
                     <form class="col d-flex justify-content-end">
                             <div class="form-row">
                               <div class="col">
-                                <input type="text" class="form-control" placeholder="First name">
+                                <input type="text" class="form-control" placeholder="Your name">
                               </div>
                               <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name">
+                                <input type="text" class="form-control" placeholder="Your email">
                               </div>
                                     <input type="submit" class="btn btn-outline-white" value="Submit">
                             
@@ -277,14 +340,34 @@
 
 
       <!-- FOOTER -->
-      <footer class="container">
+      <footer class="container container--footer">
 
-        <p>miejsce na nav</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum. Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero. Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit amet arcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
+          <ul class="nav nav-pills footer__nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>Strona główna</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">O nas</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Zespół</a>
+                  <a class="dropdown-item" href="#">Realizacje</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Rekiny na Facebooku!</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aktualności</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+          </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt nulla. Duis at purus blandit diam laoreet vestibulum. Donec mi est, sollicitudin quis nisi accumsan, luctus posuere libero. Cras mollis dapibus fringilla. Nulla sit amet ex at dui accumsan tempor. Vestibulum dapibus mi sit amet arcu imperdiet varius. Curabitur a felis interdum, dictum est in, ornare urna.</p>
 
 
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; Copyright 2017 - Paweł Ciepliński</p>
       </footer>
 
 
